@@ -26,6 +26,8 @@ function crear(e){
     document.getElementById("formulario").reset();
     console.log("Registro guardado correctamente")
     e.preventDefault()
+
+    alert("Registro añadido correctamente");
 }
 
 //Función leer
@@ -90,6 +92,7 @@ function actualizar(i){
     registros[i].noEmpleado = document.getElementById("newNoEmpleado").value;
         localStorage.setItem("Registros",JSON.stringify(registros));
         VistaPrincipal();
+        alert("Registro actualizado correctamente");
 }
 
 // Función eliminar
@@ -102,6 +105,7 @@ function eliminar(nombreCompleto){
     }
     localStorage.setItem("Registros", JSON.stringify(registros));
     leer();
+    alert("Registro eliminado correctamente");
 }
 
 //Función para mostrar la interfaz principal
