@@ -25,46 +25,46 @@
     </header>
 
     <main>
-        <div class="container mt-4" id="body">
+        <div class="container mt-4 my-3 text-center" id="body">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-8">
                     <div class="card">
                         <div class="card-header">
-                            <h2>Agregar nuevo libro</h2>
+                            <h2>Registrar nuevo usuario</h2>
                         </div>
                         <div class="card-body">
                             <form id="formulario">
                                 <div class="form-group">
-                                    <input type="text" id="titulo" class="form-control my-3" placeholder="Ingresar título">
+                                    <input type="text" id="titulo" class="form-control my-3" placeholder="Ingresar Nombre completo">
                                 </div>
                                 <div class="form-group">
-                                    <textarea id="descripcion" class="form-control my-3" placeholder="Ingresar descripción"></textarea>
+                                    <input type="email" id="descripcion" class="form-control my-3" placeholder="Ingresar correo electrónico">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" id="precio" class="form-control my-3" placeholder="Ingresar precio">
+                                    <input type="number" id="precio" class="form-control my-3" placeholder="Ingresar ID">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Agregar</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <table class="table caption-top bg-light">
+                <div class="col-md-8 my-2">
+                    <table class="table caption-top table-striped">
                         <thead>
-                          <tr>
-                            <th scope="col">Título</th>
-                            <th scope="col">Descripción</th>
-                            <th scope="col">Precio</th>
-                          </tr>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo electrónico</th>
+                            <th scope="col">ID</th>
+                        </tr>
                         </thead>
                         <tbody id="tbody">
-                          <tr>
-                            <td>Yo soy Robot</td>
-                            <td>Libro de Sci-Fi</td>
-                            <td>200.00</td>
-                          </tr>
+                        <tr>
+                            <td>Pedro</td>
+                            <td>correo@correo.com</td>
+                            <td>15975</td>
+                        </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
             </div>
         </div>
@@ -146,7 +146,11 @@
         <!-- Design -->
     </footer>
 
+    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!--JavaScript-->
+    <script src="assets\crud.js"></script>
+
 </body>
 </html>
